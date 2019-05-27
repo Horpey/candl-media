@@ -1,0 +1,1432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Candle</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://cdnjs.com/libraries/Chart.js" crossorigin="anonymous"> -->
+
+</head>
+
+
+
+
+<body>
+    <!-- beginining of header -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class='pull-left'>
+                    <a href="index.html"> <img src="img/logo.png" style="width:100px"> </a>
+
+                </div>
+
+                <!-- dropdown -->
+                <div class="row ">
+                    <div>
+                        <button class="btn-grad btn pl-4 btn-sm" data-toggle="modal" data-target="#modalsignupForm2"><i
+                                class="fas fa-plus pr-2 pl-0"></i>Post an Advert</button>
+                        <button class="btn-grad btn pl-4 btn-sm" data-toggle="modal" data-target="#modalsignupForm"><i
+                                class="fas fa-plus pr-2 pl-0"></i>Create a campaign</button>
+                    </div>
+
+                    <div class="pl-3">
+                        <div class="avatar mx-auto white">
+
+                            <p class="inline-block text-small">Seyike Sojirin <br>ssojirin@gmail.com</p>
+                            <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20%2810%29.jpg" class="rounded-circle border-image ml-2 mb-3"
+                                alt="woman avatar" style="width:36px">
+                            <span class=" dropdown waves-effect waves-light ">
+                                <span class="nav-link dropdown-toggle fas  cand-text" id="navbarDropdownMenuLink"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></span>
+                                <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </span>
+
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </nav>
+
+        <nav class="navbar navbar-expand-lg justify-content-start navbar-dark bg-grad lighten-4 py-0 my-0" style="
+z-index: 0;
+">
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mr-auto mt-lg-0">
+                    <li class="nav-item mydash">
+                        <a class="nav-link  white-text py-3 grad" href="dashboard.html"><span><img src="img/icon2.svg"
+                                    class="mr-2" style="width:12px"></span>Dashboard</a>
+                    </li>
+                    <li class="nav-item mydash">
+                        <a class="nav-link active white-text py-3 grad" href="managecampagin.html"><span><img src="img/icon4.svg"
+                                    class="mr-2" style="width:16px"></span>Manage Campaign</a>
+                    </li>
+                    <li class="nav-item mydash">
+                        <a class="nav-link white-text py-3 grad" href="billing.html"><span><img src="img/icon3.svg"
+                                    class="mr-2" style="width:10px"></span>Billing</a>
+                    </li>
+                    <li class="nav-item mydash">
+                        <a class="nav-link white-text py-3 grad" href="account.html"><span><img src="img/icon.svg"
+                                    class="mr-2" style="width:14px"></span>Account</a>
+                    </li>
+                    <form class="form-inline mx-auto grad">
+                        <div class="md-form my-0">
+                            <input class="form-control mr-sm-2 place-white" type="text" placeholder="Type to search"
+                                aria-label="Search">
+                        </div>
+                    </form>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- end of headers -->
+
+
+    <div class="modal fade" id="modalsignupForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header" style="border:0">
+                    <h4 class="modal-title w-100 font-weight-bold pt-3">Create Campaign</h4>
+
+                    <button type="button" class="close cand-text " data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" style="
+background-color: #F1003A;
+color: white;border-radius:100%;padding-left: .52em;padding-right: .52em"
+                            class="pb-1 ">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body mx-3 mb-3">
+                    <div class="mb-4">
+                        <h6 class="pb-2 cand-text font-bold">Campaign Details</h6>
+                        <label class="font-bold">Campaign Name</label>
+                        <input type="text" id="defaultForm-email" class="form-control validate" placeholder="">
+
+                    </div>
+                    <div class="mb-3 pt-3">
+                        <label class="font-bold">Budget <span class="font-small">(Total Spend)</span></label>
+                        <div class="input-group mb-3">
+                            <input type="number" class="form-control" placeholder="" aria-label="Recipient's username"
+                                aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <div class="btn-group">
+                                    <select class="btn btn-grad mr-3 py-2 " style="border-radius:0!important">
+                                        <option class="dropdown-item">-select a plan-<option>
+                                        <option class="dropdown-item">Daily<option>
+                                        <option class="dropdown-item">Lifetime<option>
+                                    </select>
+
+
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+                        <p class="font-small pt-0 mt-0">Minimum is N12,000</p>
+
+                        <!-- timeline -->
+
+
+                        <div class="pt-3">
+                            <label class="font-bold">Timeline</label>
+                            <div class="row pt-2">
+                                <div class='col-md-6'>
+                                    <div class="custom-control custom-radio pb-3">
+                                        <input type="radio" class="custom-control-input" id="defaultUnchecked2" name="radio-camp"
+                                            value="no">
+                                        <label class="custom-control-label" for="defaultUnchecked2">Start Immediately</label>
+
+                                    </div>
+
+                                </div>
+                                <div class='col-md-6'>
+                                    <div class="custom-control custom-radio pb-3">
+                                        <input type="radio" class="custom-control-input" id="defaultUnchecked3" name="radio-camp"
+                                            value="yes">
+                                        <label class="custom-control-label" for="defaultUnchecked3"> Start from Date</label>
+                                    </div>
+                                    <div class="radio-div">
+                                        <div class=''>
+                                            <label>From</label>
+                                            <input class="date-picker form-control">
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <!-- end of timeline -->
+                            <div class="pt-3">
+
+                                <div class="row">
+                                    <div class='col-md-6'>
+                                        <label>Start Date</label>
+                                        <input class="date-picker form-control">
+                                    </div>
+                                    <div class='col-md-6'>
+                                        <label class="">End Date</label>
+                                        <input class="date date-picker form-control">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="modal-footer d-flex justify-content-center mb-3 pt-5" style="border:0">
+                            <div class="text-center mx-3">
+                                <button class="btn btn-grad px-5" data-toggle="modal" data-target="#modalsignupForm2"
+                                    onclick="hidemodal()">Create
+                                    Campaign
+                                </button>
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <!-- end of post an ad -->
+        </div>
+    </div>
+
+
+    <!-- create campaign -->
+    <div class="modal fade" id="modalsignupForm2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header" style="border:0">
+                    <h4 class="modal-title w-100 font-weight-bold pt-3 pl-2">Create an Advert</h4>
+
+                    <button type="button" class="close cand-text " data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" style="
+background-color: #F1003A;
+color: white;border-radius:100%;padding-left: .52em;padding-right: .52em"
+                            class="pb-1 ">&times;</span>
+                    </button>
+                </div>
+
+                <div class="container">
+                    <ul class="nav nav-tabs my-tab mt-5 justify-content-between" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link nav-linky active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                                aria-controls="home" aria-selected="true">Spaces</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-linky" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                                aria-controls="profile" aria-selected="false">Description and Target Audience</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-linky" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
+                                aria-controls="contact" aria-selected="false">Upload Ads and Creatives</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-linky" id="payment-tab" data-toggle="tab" href="#payment" role="tab"
+                                aria-controls="payment" aria-selected="false">Payment</a>
+                        </li>
+                    </ul>
+                    <div class="modal-body mt-5 mb-2">
+                        <div class="tab-content " id="myTabContent">
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                <div class='row'>
+                                    <div class="col-md-6">
+                                        <h6 class="font-bold">Select a Campaign</h>
+                                            <div class="pt-3 pb-3 col-md-6 pl-0">
+                                                <select class=" px-2 py-2  py-2 custom-select select-bg">
+                                                    <option>Coca-cola</option>
+                                                    <option>Fanta</option>
+                                                    <option>Guniness</option>
+                                                    <option>Budweiser</option>
+                                                </select>
+                                            </div>
+                                            <div class='col-md-9 pb-3 row'>
+                                                <p class="font-bold pb-1 cand-text">How do you want to run this Advert</p>
+                                                <div class="custom-control custom-radio pb-3">
+                                                    <input type="radio" class="custom-control-input" id="defaultUnchecked8"
+                                                        name="radio-camp2" value="no">
+                                                    <label class="custom-control-label" for="defaultUnchecked8">Run
+                                                        Programmatically</label>
+
+                                                </div>
+                                                <div class="custom-control custom-radio ml-3">
+                                                    <input type="radio" class="custom-control-input" id="defaultUnchecked9"
+                                                        name="radio-camp2" value="yes">
+                                                    <label class="custom-control-label" for="defaultUnchecked9" checked>Manually</label>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div id="googleMap" style="width:100%;height:400px;"></div>
+
+
+
+
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="col-md-10 text-left">
+                                            <h6 class="font-bold">Select a Location to get started</h>
+                                                <div class="pt-3">
+                                                    <select class=" px-2 py-2  py-2 custom-select ">
+                                                        <option>-Select a location-</option>
+                                                        <option>lagos</option>
+                                                        <option>Abuja</option>
+                                                        <option>Surulere</option>
+                                                    </select>
+                                                </div>
+
+                                                <div class="pt-5 mt-5">
+                                                    <h6 class="font-bold">Boards available in that <span class="cand-text">Lagos</span></h6>
+                                                    <div class="row">
+                                                        <div class="col-md-6 col-6 col-sm-6 col-xs-6">
+
+                                                            <div classs="hover-space">
+                                                                <img src="img/screen1.png" width="150px">
+                                                            </div>
+                                                            <p><i class="fas fa-map-marker-alt cand-text pr-2 pt-3"></i>Madison</p>
+                                                        </div>
+                                                        <div class="col-md-6 col-6 col-sm-6 col-xs-6">
+
+                                                            <div classs="hover-space">
+                                                                <img src="img/screen1.png" width="150px">
+                                                            </div>
+                                                            <p><i class="fas fa-map-marker-alt cand-text pr-2 pt-3"></i>Lekki</p>
+                                                        </div>
+
+
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-6 col-6 col-sm-6 col-xs-6">
+
+                                                            <div classs="hover-space">
+                                                                <img src="img/screen1.png" width="150px">
+                                                            </div>
+                                                            <p><i class="fas fa-map-marker-alt cand-text pr-2 pt-3"></i>Madison</p>
+                                                        </div>
+                                                        <div class="col-md-6 col-6 col-sm-6 col-xs-6">
+
+                                                            <div classs="hover-space">
+                                                                <img src="img/screen1.png" width="150px">
+                                                            </div>
+                                                            <p><i class="fas fa-map-marker-alt cand-text pr-2 pt-3"></i>Lekki</p>
+                                                        </div>
+
+
+                                                    </div>
+                                                </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="text-center pt-5">
+                                    <button class="btn btn-grad px-5" data-toggle="tab" href="#profile" role="tab"
+                                        aria-controls="profile" aria-selected="false">Next</button>
+                                </div>
+
+                            </div>
+                            <!-- create adset tab -->
+
+                            <div class="tab-pane fade " id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <h6 class="cand-text font-bold pb-3 pt-4">Brand Details</h6>
+                                        <p class="font-bold">Select Campaign</p>
+                                        <div class="col-md-6 pl-0">
+                                            <select class="custom-select select-bg">
+                                                <option> Coca-cola</option>
+                                                <option> Milo</option>
+                                                <option> Bourvita</option>
+                                                <option>Chocomilo</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="pricing-box">
+                                            <div class="text-center py-4">
+                                                <p class="font-bold">Estimated Cost(NGN)</p>
+                                                <h2>N90,000</h2>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-md-7">
+                                        <p class="pt-3 font-bold">Describe Campaign and target audience</p>
+                                        <div class="col-md-9 pl-0 pb-3">
+                                            <label>Enter adset name</label>
+                                            <input class="form-control" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="pricing-box">
+                                            <div class="text-center py-4">
+                                                <p class="font-bold">Audience (Estimate 3,500,000+ people)</p>
+                                                <div class="row justify-content-center">
+                                                    <p class="font-small col-md-10">People living and Working around
+                                                        Ikoyi, Lekki and Ajah.
+                                                        Mostly Office Hours
+                                                        Workers.
+                                                        Between the Ages of 25 and 60.</p>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div>
+
+
+
+
+                                    <h6 class="cand-text pt-5">Audience (Estimate 3,500,000+ people)</h6>
+
+
+                                    <p class="font-bold pb-1">Describe your target</p>
+                                    <div class="row">
+                                        <div class='col-md-6'>
+                                            <p class="pb-2 font-bold">Age range</p>
+                                            <div class="row">
+                                                <div class="col-md-6 mt-2">
+
+                                                    <label>From</label>
+                                                    <input type="number" class="form-control">
+                                                </div>
+                                                <div class="col-md-6 mt-2">
+                                                    <label>To</label>
+                                                    <input type="number" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class='col-md-12'>
+                                            <div>
+                                                <p class="pb-2 pt-5 font-bold">Gender</p>
+                                                <!-- radio button -->
+                                                <div class="custom-control custom-radio pb-3 rounded-radio">
+                                                    <input type="radio" class="custom-control-input" id="defaultUnchecked"
+                                                        name="defaultExampleRadios1">
+                                                    <label class="custom-control-label" for="defaultUnchecked">Male</label>
+                                                </div>
+
+                                                <!-- radio button-->
+                                                <div class="custom-control custom-radio pb-3 rounded-radio">
+                                                    <input type="radio" class="custom-control-input" id="defaultChecked"
+                                                        name="defaultExampleRadios1" checked>
+                                                    <label class="custom-control-label" for="defaultChecked">Female</label>
+                                                </div>
+                                                <div class="custom-control custom-radio pb-3 rounded-radio">
+                                                    <input type="radio" class="custom-control-input" id="defaultChecked1"
+                                                        name="defaultExampleRadios1" checked>
+                                                    <label class="custom-control-label" for="defaultChecked1">Both Male
+                                                        and
+                                                        Female</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                    <h6 class="cand-text pt-5">Situation</h6>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <p class="pb-2 pt-4">Traffic</p>
+                                            <!-- radio button -->
+                                            <div class="custom-control custom-radio pb-3 rounded-radio">
+                                                <input type="radio" class="custom-control-input" id="defaultUnchecked2"
+                                                    name="defaultExampleRadios">
+                                                <label class="custom-control-label" for="defaultUnchecked2">Light</label>
+
+                                            </div>
+                                            <div class="custom-control custom-radio pb-3 rounded-radio">
+                                                <input type="radio" class="custom-control-input" id="defaultUnchecked3"
+                                                    name="defaultExampleRadios">
+                                                <label class="custom-control-label" for="defaultUnchecked3">Heavy</label>
+                                            </div>
+                                            <div class="custom-control custom-radio pb-3 rounded-radio">
+                                                <input type="radio" class="custom-control-input" id="defaultUnchecked4"
+                                                    name="defaultExampleRadios" checked>
+                                                <label class="custom-control-label" for="defaultUnchecked4">All
+                                                    conditions</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 ">
+                                            <p class="pb-2 pt-4">Weather</p>
+                                            <!-- radio button -->
+                                            <div class="custom-control custom-checkbox dis-inline pb-3 pr-2">
+                                                <input type="checkbox" class="custom-control-input" id="defaultUnchecked7">
+                                                <label class="custom-control-label" for="defaultUnchecked7">Rainy</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox dis-inline pb-3  pr-2">
+                                                <input type="checkbox" class="custom-control-input" id="defaultUnchecked8">
+                                                <label class="custom-control-label" for="defaultUnchecked8">Cloudy</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox dis-inline pb-3 pr-2">
+                                                <input type="checkbox" class="custom-control-input" id="defaultUnchecked9">
+                                                <label class="custom-control-label" for="defaultUnchecked9">Sunny</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox dis-inline pb-3 pr-2">
+                                                <input type="checkbox" class="custom-control-input" id="checked0"
+                                                    checked>
+                                                <label class="custom-control-label" for="checked0">All Weather
+                                                    conditions</label>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="container">
+                                    <div class="row justify-content-start">
+                                        <div class="col-md-4  pl-0">
+                                            <p class="pb-2 pt-4 font-bold">Scenerios <span class="font-small">*you can
+                                                    select
+                                                    multiple</span></p>
+
+                                            <select class="custom-select dis-inline">
+                                                <option>Accident</option>
+                                                <option>Thunderstorm</option>
+                                                <option>Road Block</option>
+                                            </select>
+
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="" style="
+                                            padding-top: 70px;">
+                                                <span class="cand-text fas fa-plus-circle fa-2x"></span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                <p class="pb-2 pt-4 font-bold">Time of Display<span class="font-small">Schedule display
+                                        time by selecting multiple time frame</span></p>
+                                <div class="row">
+                                    <div class="col-md-4 ">
+
+                                        <label>From</label>
+                                        <input type="time" class="form-control">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label>To</label>
+                                        <input type="time" class="form-control">
+                                    </div>
+                                    <div style="
+                                    padding-top: 30px;">
+                                        <span class="cand-text fas fa-plus-circle fa-2x"></span>
+                                    </div>
+
+                                </div>
+                                <!-- budget -->
+                                <h6 class="cand-text font-bold pb-3 pt-4">Budget</h6>
+
+                                <div class="col-md-6 pl-0 pb-3">
+                                    <label>MCPV <span class="font-small">(Minimum cost per year)</span></label>
+                                    <input class="form-control" type="text">
+                                </div>
+                                <div class="col-md-6 pl-0 pb-3">
+                                    <label>Fast Dsiplay</span></label>
+                                    <input class="form-control" type="text">
+                                </div>
+
+                                <div class="text-center pt-5 pb-3">
+                                    <button class="btn btn-outline px-5" data-toggle="tab" href="#profile" role="tab"
+                                        aria-controls="profile" aria-selected="false">Back
+                                    </button>
+                                    <button class="btn btn-grad px-5" data-toggle="tab" href="#profile" role="tab"
+                                        aria-controls="profile" aria-selected="false">Next
+                                    </button>
+                                </div>
+                            </div>
+
+
+                            <!-- end of adset tab -->
+
+                            <!-- upload -->
+                            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                                <!-- Classic tabs -->
+                                <div class="classic-tabs">
+
+                                    <ul class="nav pb-1 font-bold" id="myClassicTab" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link  waves-light active show grey-text" id="profile-tab-classic"
+                                                data-toggle="tab" href="#follow-classic" role="tab" aria-controls="profile-classic"
+                                                aria-selected="true">Single Post</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link waves-light grey-text" id="follow-tab-classic"
+                                                data-toggle="tab" href="#profile-classic" role="tab" aria-controls="follow-classic"
+                                                aria-selected="false">Multiple Post</a>
+                                        </li>
+
+                                    </ul>
+                                    <div class="box-post">
+                                        <div class="tab-content " id="myClassicTabContent">
+                                            <div class="tab-pane fade  " id="profile-classic" role="tabpanel"
+                                                aria-labelledby="profile-tab-classic">
+                                                <p>Name of Advert</p>
+                                                <h5 class="cand-text">Pepsi Disemba</h5>
+                                                <p>Location</p>
+                                                <h5>Lagos</h5>
+
+                                                <p class="font-bold pt-3">Select board to Upload Creatives</p>
+                                                <div class='row'>
+
+
+                                                    <div class="custom-control custom-checkbox custom-control-inline">
+                                                        <input type="checkbox" class="custom-control-input" id="defaultInline1">
+                                                        <label class="custom-control-label" for="defaultInline1"><img
+                                                                src='img/23.png' style="width:60px">
+                                                            <p class="pt-1">Madison</p>
+                                                        </label>
+                                                    </div>
+
+                                                    <!-- Default inline 2-->
+                                                    <div class="custom-control custom-checkbox custom-control-inline">
+                                                        <input type="checkbox" class="custom-control-input" id="defaultInline2">
+                                                        <label class="custom-control-label" for="defaultInline2"><img
+                                                                src='img/23.png' style="width:60px">
+                                                            <p class="pt-1">Idiroko</p>
+                                                        </label>
+                                                    </div>
+
+                                                    <!-- Default inline 3-->
+                                                    <div class="custom-control custom-checkbox custom-control-inline">
+                                                        <input type="checkbox" class="custom-control-input" id="defaultInline3">
+                                                        <label class="custom-control-label" for="defaultInline3"><img
+                                                                src='img/23.png' style="width:60px">
+                                                            <p class="pt-1">Abuja</p>
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="custom-control custom-checkbox custom-control-inline">
+                                                        <input type="checkbox" class="custom-control-input" id="defaultInline4">
+                                                        <label class="custom-control-label" for="defaultInline4"><img
+                                                                src='img/23.png' style="width:60px">
+                                                            <p class="pt-1">Ikeja</p>
+                                                        </label>
+                                                    </div>
+                                                    <div class="custom-control custom-checkbox custom-control-inline">
+                                                        <input type="checkbox" class="custom-control-input" id="defaultInline5">
+                                                        <label class="custom-control-label" for="defaultInline5"><img
+                                                                src='img/23.png' style="width:60px">
+                                                            <p class="pt-1">Dopemu</p>
+                                                        </label>
+                                                    </div>
+
+
+
+
+
+
+                                                </div>
+
+
+
+                                                <div class="analy-box px-5 py-5 mb-4">
+                                                    <nav>
+                                                        <div class="nav nav-tabs md-tabs col-md-5" id="nav-tab" role="tablist">
+                                                            <a class="nav-item nav-link active font-bold" id="nav-home-tab"
+                                                                data-toggle="tab" href="#nav-home" role="tab"
+                                                                aria-controls="nav-home font-bold" aria-selected="true">Image</a>
+                                                            <a class="nav-item nav-link font-bold" id="nav-profile-tab"
+                                                                data-toggle="tab" href="#nav-profile" role="tab"
+                                                                aria-controls="nav-profile" aria-selected="false">Video</a>
+                                                            <a class="nav-item nav-link font-bold" id="nav-contact-tab"
+                                                                data-toggle="tab" href="#nav-contact" role="tab"
+                                                                aria-controls="nav-contact" aria-selected="false">Web
+                                                                Url</a>
+                                                        </div>
+                                                    </nav>
+                                                    <div class="tab-content pt-5" id="nav-tabContent">
+                                                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
+                                                            aria-labelledby="nav-home-tab">
+                                                            <p class="font-bold">Upload image</p>
+                                                            <div class="col-md-6 px-0 mx-0">
+                                                                <div class="input-group mb-3 px-0 mx-0">
+                                                                    <div class="input-group-prepend btn-grad">
+                                                                        <span class="input-group-text btn-grad" id="inputGroupFileAddon01">Upload</span>
+                                                                    </div>
+                                                                    <div class="custom-file">
+                                                                        <input type="file" class="custom-file-input btn-grad"
+                                                                            id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+                                                                        <label class="custom-file-label " for="inputGroupFile01">Choose
+                                                                            file</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <p class="pt-4">Instructions</p>
+                                                            <p class="font-small">Kindly ensure that all ads are of
+                                                                high resolution, 4K for images and over 500dpi for
+                                                                image files. Also ensure that your images is approved
+                                                                by the concerned regulatory bodies.</p>
+
+                                                            <div>
+                                                                <button class="btn btn-grad btn-md">Save</button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-pane fade" id="nav-profile" role="tabpanel"
+                                                            aria-labelledby="nav-profile-tab">
+                                                            <p>Upload Video</p>
+                                                            <div class="">
+                                                                <div class="file-upload-wrapper">
+                                                                    <input type="file" id="input-file-max-fs" class="file-upload"
+                                                                        data-max-file-size="2M" />
+                                                                </div>
+                                                                <p class="pt-4">Instructions</p>
+                                                                <p class="font-small">Kindly ensure that all ads are of
+                                                                    high resolution,Clear videos. Also ensure that your
+                                                                    video is approved
+                                                                    by the concerned regulatory bodies.</p>
+                                                                <div>
+                                                                    <button class="btn btn-grad btn-md">Save</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+                                                        <div class="tab-pane fade" id="nav-contact" role="tabpanel"
+                                                            aria-labelledby="nav-contact-tab">
+                                                            <p>Enter Web Url</p>
+                                                            <div class="col-md-10">
+                                                                <div>
+                                                                    <input class="form-control" type="text">
+                                                                    <p class="font-small">Kindly ensure that all ads
+                                                                        are of
+                                                                        high resolution,Clear videos. Also ensure that
+                                                                        your video is approved
+                                                                        by the concerned regulatory bodies.
+                                                                    </p>
+                                                                    <div>
+                                                                        <button class="btn btn-grad btn-md">Save</button>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+
+                                                        </div>
+
+
+                                                    </div>
+                                                </div>
+
+                                                <!-- preview -->
+                                                <div class="container">
+                                                    <p class="font-bold pb-1 pl-0 ml-0">Preview</p>
+                                                    <p class="">All Boards</p>
+                                                    <div class='row pb-2'>
+                                                        <div class="mr-3">
+                                                            <p class='font-small'><span class="fas fa-play fa-lg cand-text pr-1"></span>Madison</p>
+
+                                                        </div>
+                                                        <div class="mr-3">
+                                                            <p class='font-small'><span class="fas fa-play fa-lg grey-text pr-1"></span>Dopemu</p>
+
+                                                        </div>
+                                                        <div class="mr-3">
+                                                            <p class='font-small'><span class="fas fa-play fa-lg grey-text pr-1"></span>Yaba</p>
+
+                                                        </div>
+                                                        <div class="mr-3">
+                                                            <p class='font-small'><span class="fas fa-play fa-lg grey-text pr-1"></span>Ikeja</p>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <img src='img/preview.png' style='width:40vw'>
+
+                                                </div>
+                                                <!-- disclaimer -->
+                                                <div class="pt-3">
+                                                    <div class="col-md-6">
+                                                        <hr>
+                                                    </div>
+                                                    <h5 class="py-3">Disclaimer</h5>
+                                                    <p class='font-small'>
+                                                        By clicking next you agree to all candle’s , alpha and jam
+                                                        advertising and content management agreement and Term&Condition
+                                                        , Please visit candle.media/policy for more.
+                                                    </p>
+                                                    <p class='font-small'>
+                                                        By clicking next, you also indemnify the network her partners
+                                                        and boards of any legal clams against her by your ad material /
+                                                        campaign.
+                                                    </p>
+                                                    <p class='font-small'>
+                                                        Please note that all ads that do not meet our design
+                                                        specification and brand guideline as seen in
+                                                        candle.media/design-brandguidline will not be approved.
+                                                    </p>
+
+                                                </div>
+                                                <div>
+
+                                                </div>
+                                            </div>
+                                            <!-- end of multple upload -->
+                                            <div class="tab-pane fade active show" id="follow-classic" role="tabpanel"
+                                                aria-labelledby="follow-tab-classic">
+                                                <h5 class="font-bold cand-text pb-2 pt-3">Upload Campaign Visuals</h5>
+                                                <p>Select Media type</p>
+                                                <div>
+                                                    <nav>
+                                                        <div class="nav nav-tabs md-tabs col-md-5" id="nav-tab" role="tablist">
+                                                            <a class="nav-item nav-link active font-bold" id="nav-home-tab"
+                                                                data-toggle="tab" href="#nav-home" role="tab"
+                                                                aria-controls="nav-home font-bold" aria-selected="true">Image</a>
+                                                            <a class="nav-item nav-link font-bold" id="nav-profile-tab"
+                                                                data-toggle="tab" href="#nav-profile" role="tab"
+                                                                aria-controls="nav-profile" aria-selected="false">Video</a>
+                                                            <a class="nav-item nav-link font-bold" id="nav-contact-tab"
+                                                                data-toggle="tab" href="#nav-contact" role="tab"
+                                                                aria-controls="nav-contact" aria-selected="false">Web
+                                                                Url</a>
+                                                        </div>
+                                                    </nav>
+                                                    <div class="tab-content pt-5" id="nav-tabContent">
+                                                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
+                                                            aria-labelledby="nav-home-tab">
+                                                            <p class="font-bold">Upload image</p>
+                                                            <div class="col-md-6 px-0 mx-0">
+                                                                <div class="input-group mb-3 px-0 mx-0">
+                                                                    <div class="input-group-prepend btn-grad">
+                                                                        <span class="input-group-text btn-grad" id="inputGroupFileAddon01">Upload</span>
+                                                                    </div>
+                                                                    <div class="custom-file">
+                                                                        <input type="file" class="custom-file-input btn-grad"
+                                                                            id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+                                                                        <label class="custom-file-label " for="inputGroupFile01">Choose
+                                                                            file</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <p class="pt-4">Instructions</p>
+                                                            <p class="font-small">Kindly ensure that all ads are of
+                                                                high resolution, 4K for images and over 500dpi for
+                                                                image files. Also ensure that your images is approved
+                                                                by the concerned regulatory bodies.</p>
+                                                        </div>
+                                                        <div class="tab-pane fade" id="nav-profile" role="tabpanel"
+                                                            aria-labelledby="nav-profile-tab">
+                                                            <p>Upload Video</p>
+                                                            <div class="">
+                                                                <div class="file-upload-wrapper">
+                                                                    <input type="file" id="input-file-max-fs" class="file-upload"
+                                                                        data-max-file-size="2M" />
+                                                                </div>
+                                                                <p class="pt-4">Instructions</p>
+                                                                <p class="font-small">Kindly ensure that all ads are of
+                                                                    high resolution,Clear videos. Also ensure that your
+                                                                    video is approved
+                                                                    by the concerned regulatory bodies.</p>
+                                                            </div>
+                                                        </div>
+
+
+                                                        <div class="tab-pane fade" id="nav-contact" role="tabpanel"
+                                                            aria-labelledby="nav-contact-tab">
+                                                            <p>Enter Web Url</p>
+                                                            <div class="col-md-10">
+                                                                <div>
+                                                                    <input class="form-control" type="text">
+                                                                    <p class="font-small">Kindly ensure that all ads
+                                                                        are of
+                                                                        high resolution,Clear videos. Also ensure that
+                                                                        your video is approved
+                                                                        by the concerned regulatory bodies.
+                                                                    </p>
+                                                                </div>
+
+                                                            </div>
+
+                                                        </div>
+
+
+                                                    </div>
+                                                </div>
+                                                <p class="pt-5 pb-3 font-bold">Preview</p>
+                                                <div class='col-md-10'>
+                                                    <div class="text-center">
+                                                        <img src="img/preview.png" style="width:40vw">
+                                                    </div>
+
+                                                </div>
+                                                <!-- disclaimer -->
+                                                <div class="pt-3">
+                                                    <div class="col-md-6">
+                                                        <hr>
+                                                    </div>
+                                                    <h5 class="py-3">Disclaimer</h5>
+                                                    <p class='font-small'>
+                                                        By clicking next you agree to all candle’s , alpha and jam
+                                                        advertising and content management agreement and Term&Condition
+                                                        , Please visit candle.media/policy for more.
+                                                    </p>
+                                                    <p class='font-small'>
+                                                        By clicking next, you also indemnify the network her partners
+                                                        and boards of any legal clams against her by your ad material /
+                                                        campaign.
+                                                    </p>
+                                                    <p class='font-small'>
+                                                        Please note that all ads that do not meet our design
+                                                        specification and brand guideline as seen in
+                                                        candle.media/design-brandguidline will not be approved.
+                                                    </p>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <!-- multiple post for campaign -->
+
+                                    <div class="text-center pt-5 pb-3">
+                                        <button class="btn btn-outline px-5" data-toggle="tab" href="#profile" role="tab"
+                                            aria-controls="profile" aria-selected="false">Back
+                                        </button>
+                                        <button class="btn btn-grad px-5" data-toggle="tab" href="#profile" role="tab"
+                                            aria-controls="profile" aria-selected="false">Next
+                                        </button>
+                                    </div>
+                                </div>
+                                <!-- Classic tabs -->
+
+                            </div>
+                            <!-- end upload -->
+
+                            <!-- payment -->
+                            <div class="tab-pane fade" id="payment" role="tabpanel" aria-labelledby="payment-tab">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <!-- credit cards  -->
+                                        <div class="">
+                                            <h6 class='cand-text font-bold'>Make payment</h6>
+                                            <div class="row justify-content-between">
+                                                <div class='col-md-4'>
+                                                    <p class='pt-2'>Select a card</p>
+                                                </div>
+                                                <div class="col-md-5 wow fadeInRight">
+                                                    <div>
+                                                        <button class="btn-new-card btn pl-4 btn-sm " data-toggle="modal"
+                                                            data-target="#modalLoginForm"><i class="fas fa-plus pr-2 pl-0"></i>Add
+                                                            New Card</button>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+
+                                            <div class="row pt-2">
+
+                                                <div class="col-md-6 mt-3 wow bounceInLeft">
+                                                    <div class="card-box px-3 py-1">
+                                                        <div class="row justify-content-between">
+                                                            <div class="col-md-3 col-sm-3 col-lg-3 col-3 col-xs-3">
+                                                                <img src="img/chip.png" style="width:25px">
+                                                            </div>
+                                                            <div class="col-md-3 col-sm-3 col-lg-3 col-3 col-xs-3">
+                                                                <img src="img/mastercard.png" style="width:35px">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="white-text pt-3 pb-2">
+                                                            <p>**** **** ****<span>4444</span></p>
+                                                        </div>
+                                                        <div class="row justify-content-between white-text">
+                                                            <div class="col-md-6 col-sm-6 col-xm-6  col-6">
+                                                                <p class="pb-0 mb-0 font-small">Card Holder</p>
+                                                                <p class="font-bold font-small">Seyike Sojirin</p>
+                                                            </div>
+                                                            <div class="col-md-6 col-sm-6 col-6 col-xs-6">
+                                                                <p class="pb-0 mb-0 font-small">Expiry Date</p>
+                                                                <p class="font-bold pt-0 mt-0 font-small">09/19</p>
+                                                            </div>
+                                                        </div>
+
+
+
+
+                                                    </div>
+
+                                                </div>
+                                                <div class="col-md-6 mt-3 wow bounceInUp">
+                                                    <div class="card-box2 px-3 py-1">
+                                                        <div class="row justify-content-between">
+                                                            <div class="col-md-3 col-sm-3 col-lg-3 col-3 col-xs-3">
+                                                                <img src="img/chip.png" style="width:25px">
+                                                            </div>
+                                                            <div class="col-md-3 col-sm-3 col-lg-3 col-3 col-xs-3">
+                                                                <img src="img/mastercard.png" style="width:35px">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="white-text pt-3 pb-2">
+                                                            <p>**** **** ****<span>4444</span></p>
+                                                        </div>
+                                                        <div class="row justify-content-between white-text">
+                                                            <div class="col-md-6 col-sm-6 col-xm-6  col-6">
+                                                                <p class="pb-0 mb-0 font-small">Card Holder</p>
+                                                                <p class="font-bold font-small">Seyike Sojirin</p>
+                                                            </div>
+                                                            <div class="col-md-6 col-sm-6 col-6 col-xs-6">
+                                                                <p class="pb-0 mb-0 font-small">Expiry Date</p>
+                                                                <p class="font-bold pt-0 mt-0 font-small">09/19</p>
+                                                            </div>
+                                                        </div>
+
+
+
+
+                                                    </div>
+
+
+                                                </div>
+                                                <div class="col-md-6 mt-3 wow bounceInUp">
+                                                    <div class="card-box2 px-3 py-1">
+                                                        <div class="row justify-content-between">
+                                                            <div class="col-md-3 col-sm-3 col-lg-3 col-3 col-xs-3">
+                                                                <img src="img/chip.png" style="width:25px">
+                                                            </div>
+                                                            <div class="col-md-3 col-sm-3 col-lg-3 col-3 col-xs-3">
+                                                                <img src="img/mastercard.png" style="width:35px">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="white-text pt-3 pb-2">
+                                                            <p>**** **** ****<span>4444</span></p>
+                                                        </div>
+                                                        <div class="row justify-content-between white-text">
+                                                            <div class="col-md-6 col-sm-6 col-xm-6  col-6">
+                                                                <p class="pb-0 mb-0 font-small">Card Holder</p>
+                                                                <p class="font-bold font-small">Seyike Sojirin</p>
+                                                            </div>
+                                                            <div class="col-md-6 col-sm-6 col-6 col-xs-6">
+                                                                <p class="pb-0 mb-0 font-small">Expiry Date</p>
+                                                                <p class="font-bold pt-0 mt-0 font-small">09/19</p>
+                                                            </div>
+                                                        </div>
+
+
+
+
+                                                    </div>
+
+
+                                                </div>
+                                                <div class="col-md-6 mt-3 wow bounceInRight">
+                                                    <div class="card-box3 px-3 py-1">
+                                                        <div class="row justify-content-between">
+                                                            <div class="col-md-3 col-sm-3 col-lg-3 col-3 col-xs-3">
+                                                                <img src="img/chip.png" style="width:25px">
+                                                            </div>
+                                                            <div class="col-md-3 col-sm-3 col-lg-3 col-3 col-xs-3">
+                                                                <img src="img/mastercard.png" style="width:35px">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="white-text pt-3 pb-2">
+                                                            <p>**** **** ****<span>4444</span></p>
+                                                        </div>
+                                                        <div class="row justify-content-between white-text">
+                                                            <div class="col-md-6 col-sm-6 col-xm-6  col-6">
+                                                                <p class="pb-0 mb-0 font-small">Card Holder</p>
+                                                                <p class="font-bold font-small">Seyike Sojirin</p>
+                                                            </div>
+                                                            <div class="col-md-6 col-sm-6 col-6 col-xs-6">
+                                                                <p class="pb-0 mb-0 font-small">Expiry Date</p>
+                                                                <p class="font-bold pt-0 mt-0 font-small">09/19</p>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="text-left pt-3">
+                                                <button class='btn btn-grad px-5'>Pay</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="row text-left">
+                                            <div class="col-md-12 ">
+                                                <div class="box-post">
+                                                    <p>Total Cost</p>
+                                                    <h2 class="cand-text">N60,000,000</h2>
+                                                    <div>
+                                                        <hr class="col-md-3">
+                                                    </div>
+
+                                                    <p>For Bank Transfer</p>
+                                                    <p class='black-text font-small '>
+                                                        Guarantee Trust Bank <br>
+                                                        Account Name: Alphaandjam Limited. <br>
+                                                        Account Number: 0092343434.<br>
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-12 ">
+                                                <div class="box-post">
+                                                    <p>Estimated Audience size</p>
+                                                    <h2 class="cand-text">N350,000,000+</h2>
+                                                    <hr class="col-md-3">
+                                                    <p>For Bank Transfer</p>
+                                                    <p class='black-text font-small'>
+                                                        Guarantee Trust Bank <br>
+                                                        Account Name: Alphaandjam Limited. <br>
+                                                        Account Number: 0092343434.<br>
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <!-- credit cards  -->
+
+                                <!-- end of credit card -->
+
+                                <!-- Order details -->
+
+                                <div class="pt-4 mt-2 box-post">
+                                    <h6 class="font-bold cand-text">Order Details </h6>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="py-2 ">
+                                                <label>Campaign Name</label>
+                                                <h6 class="font-bold">Coca-cola</h6>
+                                            </div>
+                                            <div class="py-2 ">
+                                                <label>Adset Name</label>
+                                                <h6 class="font-bold">Coca-cola</h6>
+                                            </div>
+                                            <div class="py-2 ">
+                                                <label>AdSet triggers </label>
+                                                <p>Gender</p>
+                                                <h6 class="font-bold">Both Male and Female</h6>
+                                                <p>Age</p>
+                                                <h6 class="font-bold">25 - 60</h6>
+                                                <p>Weather</p>
+                                                <h6 class="font-bold">All Weather Conditions</h6>
+
+
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="py-2 ">
+                                                <label>Selected Board</label>
+                                                <h6 class="font-bold">5th Avenue, Cement Agege Motor Road- iKEJA</h6>
+                                            </div>
+                                            <div class="py-2 ">
+                                                <label>Campaign Duration</label>
+                                                <h6 class="font-bold">Lifetime</h6>
+                                            </div>
+                                            <div class="py-2 ">
+                                                <label>Preview</label>
+                                                <div>
+                                                    <img src="img/preview.png" style="width:150px">
+                                                </div>
+
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                <!-- Order details -->
+                                <div class="text-center pt-5 pb-3">
+                                    <button class="btn btn-outline px-5" data-toggle="tab" href="#profile" role="tab"
+                                        aria-controls="profile" aria-selected="false">Back
+                                    </button>
+                                    <button class="btn btn-grad px-5" data-toggle="tab" href="#profile" role="tab"
+                                        aria-controls="profile" aria-selected="false">Pay
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- end of payment -->
+
+                        </div>
+
+
+
+
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+    </div>
+
+
+
+
+
+
+    <!-- end of create campaign -->
+
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script type="text/javascript" src="js/chart.js"></script>
+    <script>
+        function myMap() {
+            var mapProp = {
+                center: new google.maps.LatLng(51.508742, -0.120850),
+                zoom: 5,
+            };
+            var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+        }
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+
+
+    <script>
+        new WOW().init();
+        $('.datepicker').datepicker();
+    </script>
+    <!-- <script src="path/to/chartjs/dist/Chart.js"></script> -->
+    <script>
+
+
+        var ctx = document.getElementById("myChart");
+        var myChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ["Jan", "Feb", "March", "Apr", "May", "Jun", "July", "Aug", "Sep", "Oct", "Nov", "Dec"],
+                datasets: [{
+
+                    borderColor: "#f96332",
+                    pointBorderColor: "#FFF",
+                    pointBackgroundColor: "#f96332",
+                    pointBorderWidth: 2,
+                    pointHoverRadius: 4,
+                    pointHoverBorderWidth: 1,
+                    pointRadius: 4,
+                    fill: true,
+
+                    borderWidth: 2,
+                    label: 'Impression',
+                    labels: {
+                        // This more specific font property overrides the global property
+                        fontColor: '#CCCCCC',
+                    },
+                    data: [80, 19, 18, 7, 52, 23, 20, 44, 66, 80, 20, 50],
+                    tooltips: {
+                        mode: 'nearest'
+                    },
+
+                    backgroundColor: [
+                        '  #FFF4F5',
+
+                    ],
+                    borderColor: [
+                        '#FF0A62',
+
+                    ],
+
+                    borderWidth: 2
+                }]
+            },
+
+            options: {
+                legend: {
+                    display: false
+                },
+                tooltips: {
+                    bodySpacing: 4,
+                    mode: "nearest",
+                    intersect: 0,
+                    position: "nearest",
+                    xPadding: 10,
+                    yPadding: 10,
+                    caretPadding: 10
+                },
+                responsive: true,
+                scales: {
+                    xAxes: [{
+                        color: "#fff",
+                    }],
+                    yAxes: [{
+                        gridLines: {
+                            color: "rgba(0, 0, 0, 0)",
+                            zeroLineColor: "transparent",
+                            drawTicks: false,
+                            display: false,
+                            drawBorder: false
+                        },
+
+
+                    }]
+                }
+            }
+        });
+
+
+
+
+
+
+
+        var ctxy = document.getElementById("myPieChart");
+        var myPieChart = new Chart(ctxy, {
+            type: 'pie',
+            data: {
+                datasets: [{
+                    data: [70, 30],
+                    backgroundColor: ["#4880FF", "#FF5660"],
+
+                }],
+
+
+                labels: [
+
+                    'Male',
+                    'Female',
+
+
+                ]
+            }
+        });
+    </script>
+    <script>
+        $(window).scroll(function () {
+            $(".arrow").css("opacity", 1 - $(window).scrollTop() / 250);
+            //250 is fade pixels
+        });
+    </script>
+    <script>
+
+        jQuery(document).ready(function ($) {
+            var alterClass = function () {
+                var ww = document.body.clientWidth;
+                if (ww < 768) {
+                    $('#navbarToggleExternalContent').addClass('collapse');
+
+
+                }
+                else {
+                    $('#navbarToggleExternalContent').removeClass('collapse');
+
+                }
+            };
+            $(window).resize(function () {
+                alterClass();
+            });
+            //Fire it when the page first loads:
+            alterClass();
+
+            // radio show
+            $('.radio-div').hide();
+            $('input:radio[name="radio-camp"]').change(function () {
+                if ($(this).val() == 'yes') {
+                    //    show div
+                    $('.radio-div').show();
+                }
+                else {
+                    $('.radio-div').hide();
+                }
+
+            });
+
+
+        });
+
+
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('.dropdown-submenu a.test').on("click", function (e) {
+                $(this).next('ul').toggle();
+                e.stopPropagation();
+                e.preventDefault();
+            });
+        });
+    </script>
+
+    <!-- to hide modal -->
+    <!-- <script>
+function hidemodal() {
+$('#modalsignupForm').modal('hide');
+}
+
+</script> -->
+    <!-- end of hide modal -->
+
+
+</body>
+
+</html>

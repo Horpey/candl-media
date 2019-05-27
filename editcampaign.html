@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Candle</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.com/libraries/Chart.js" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+</head>
+
+
+
+
+<body>
+    <!-- beginining of header -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class='pull-left'>
+                    <img src="img/logo.png" style="width:100px">
+                </div>
+
+                <!-- dropdown -->
+                <div class="row ">
+                    <div>
+                        <button class="btn-grad btn pl-4 btn-sm"><i class="fas fa-plus pr-2 pl-0"></i>Post an Advert</button>
+                        <button class="btn-grad btn pl-4 btn-sm"><i class="fas fa-plus pr-2 pl-0"></i>Create a campaign</button>
+                    </div>
+
+                    <div class="pl-3">
+                        <div class="avatar mx-auto white">
+
+                            <p class="inline-block text-small">Seyike Sojirin <br>ssojirin@gmail.com</p>
+                            <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20%2810%29.jpg" class="rounded-circle border-image ml-2 mb-3"
+                                alt="woman avatar" style="width:36px">
+                            <span class=" dropdown waves-effect waves-light ">
+                                <span class="nav-link dropdown-toggle fas  cand-text" id="navbarDropdownMenuLink"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></span>
+                                <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Settings</a>
+                                    <a class="dropdown-item" href="#">Log Out</a>
+                                </div>
+                            </span>
+
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </nav>
+
+        <nav class="navbar navbar-expand-lg justify-content-start navbar-dark bg-grad lighten-4 py-0 my-0" style="
+        z-index: 0;
+    ">
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mr-auto mt-lg-0">
+                    <li class="nav-item mydash">
+                        <a class="nav-link  white-text py-3 grad" href="dashboard.html"><span><img src="img/icon2.svg"
+                                    class="mr-2" style="width:12px"></span>Dashboard</a>
+                    </li>
+                    <li class="nav-item mydash">
+                        <a class="nav-link white-text py-3 grad active" href="#!"><span><img src="img/icon4.svg" class="mr-2"
+                                    style="width:16px"></span>Manage Campaign</a>
+                    </li>
+                    <li class="nav-item mydash">
+                        <a class="nav-link white-text py-3 grad" href="billing.html"><span><img src="img/icon3.svg"
+                                    class="mr-2" style="width:10px"></span>Billing</a>
+                    </li>
+                    <li class="nav-item mydash">
+                        <a class="nav-link white-text py-3 grad" href="account.html"><span><img src="img/icon.svg"
+                                    class="mr-2" style="width:14px"></span>Account</a>
+                    </li>
+                    <form class="form-inline mx-auto">
+                        <div class="md-form my-0">
+                            <input class="form-control mr-sm-2 place-white" type="text" placeholder="Type to search"
+                                aria-label="Search">
+                        </div>
+                    </form>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- end of headers -->
+
+
+
+    <div class="container pt-5 table-responsive text-nowrap">
+        <div>
+            <h5 class="cand-text pb-3"><span class="fas fa-arrow-left pr-3"></span><a class="cand-text" href="managecampagin.html">Adverts</a></h5>
+            <div class='row'>
+                <div class="col-md-4 mt-3">
+                    <div class="card card-height pl-3 pb-3">
+                        <div class="row justify-content-between">
+                            <div class="col-md-6">
+                                <h6 class="pt-3 ">Campaign Title : Coca-cola</h6>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="text-center pt-3">
+                                  <a href ="editadset.html">  <span class="fas fa-trash-alt fa-md cand-text"></span></a>
+                                  <a href ="editadset.html">  <span class="fas fa-edit fa-md green-text pl-2"></span></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h6>Budget : N300,000</h6>
+                        <h6>Date : 03/12/2018</h6>
+                        <p class="pt-2">Location : Lagos</p>
+                        <p class="mb-1">Boards</p>
+                        <p class ="font-small pb-0 mb-0">Click to preview screen</p>
+
+                        <div class="pb-0 pt-0 mt-0">
+                                <a class="btn btn-outline btn-sm">Madison</a>
+                                <a class="btn btn-outline btn-sm">Idiroko</a>
+    
+                            </div>
+
+                    </div>
+                </div>
+                <div class="col-md-4 mt-3">
+                        <div class="card card-height pl-3 pb-3">
+                            <div class="row justify-content-between">
+                                <div class="col-md-6">
+                                    <h6 class="pt-3 ">Campaign Title : Coca-cola</h6>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="text-center pt-3">
+                                        <span class="fas fa-trash-alt fa-md cand-text"></span>
+                                        <span class="fas fa-edit fa-md pl-3 green-text"></span>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <h6>Budget : N300,000</h6>
+                            <h6>Date : 03/12/2018</h6>
+                            <p class="pt-2">Location : Lagos</p>
+                            <p class="mb-1">Boards</p>
+                            <p class ="font-small pb-0 mb-0">Click to preview screen</p>
+    
+                            <div class="pb-0 pt-0 mt-0">
+                                    <a class="btn btn-outline btn-sm">Madison</a>
+                                    <a class="btn btn-outline btn-sm">Idiroko</a>
+        
+                                </div>
+    
+                        </div>
+                    </div>
+                    <div class="col-md-4 mt-3">
+                            <div class="card card-height pl-3 pb-3">
+                                <div class="row justify-content-between">
+                                    <div class="col-md-6">
+                                        <h6 class="pt-3 ">Campaign Title : Coca-cola</h6>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="text-center pt-3">
+                                            <span class="fas fa-trash-alt fa-md cand-text"></span>
+                                            <span class="fas fa-edit fa-md pl-3 green-text"></span>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <h6>Budget : N300,000</h6>
+                                <h6>Date : 03/12/2018</h6>
+                                <p class="pt-2">Location : Lagos</p>
+                                <p class="mb-1">Boards</p>
+                                <p class ="font-small pb-0 mb-0">Click to preview screen</p>
+        
+                                <div class="pb-0 pt-0 mt-0">
+                                        <a class="btn btn-outline btn-sm">Madison</a>
+                                        <a class="btn btn-outline btn-sm">Idiroko</a>
+            
+                                    </div>
+        
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 mt-3">
+                                <div class="card card-height pl-3 pb-3">
+                                    <div class="row justify-content-between">
+                                        <div class="col-md-6">
+                                            <h6 class="pt-3 ">Campaign Title : Coca-cola</h6>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="text-center pt-3">
+                                                <span class="fas fa-trash-alt fa-md cand-text"></span>
+                                                <span class="fas fa-edit fa-md pl-3 green-text"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+            
+                                    <h6>Budget : N300,000</h6>
+                                    <h6>Date : 03/12/2018</h6>
+                                    <p class="pt-2">Location : Lagos</p>
+                                    <p class="mb-1">Boards</p>
+                                    <p class ="font-small pb-0 mb-0">Click to preview screen</p>
+            
+                                    <div class="pb-0 pt-0 mt-0">
+                                            <a class="btn btn-outline btn-sm">Madison</a>
+                                            <a class="btn btn-outline btn-sm">Idiroko</a>
+                
+                                        </div>
+            
+                                </div>
+                            </div>
+                            <div class="col-md-4 mt-3">
+                                    <div class="card card-height pl-3 pb-3">
+                                        <div class="row justify-content-between">
+                                            <div class="col-md-6">
+                                                <h6 class="pt-3 ">Campaign Title : Coca-cola</h6>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="text-center pt-3">
+                                                    <span class="fas fa-trash-alt fa-md cand-text"></span>
+                                                    <span class="fas fa-edit fa-md pl-3 green-text"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                
+                                        <h6>Budget : N300,000</h6>
+                                        <h6>Date : 03/12/2018</h6>
+                                        <p class="pt-2">Location : Lagos</p>
+                                        <p class="mb-1">Boards</p>
+                                        <p class ="font-small pb-0 mb-0">Click to preview screen</p>
+                
+                                        <div class="pb-0 pt-0 mt-0">
+                                                <a class="btn btn-outline btn-sm">Madison</a>
+                                                <a class="btn btn-outline btn-sm">Idiroko</a>
+                    
+                                            </div>
+                
+                                    </div>
+                                </div>
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- end of sign up -->
+
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+
+    <script type="text/javascript" src="js/modules/chart.js"></script>
+    <script type="text/javascript" src="js/modules/jquery.easing.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script>
+
+        $(document).ready(function () {
+            $('#table_id').DataTable();
+        });
+    </script>
+    <script>
+        new WOW().init();
+    </script>
+    <div class="hiddendiv common"></div>
+
+
+</body>
+
+</html>

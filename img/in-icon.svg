@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;}
+	.st1{fill:#18D7AA;}
+	.st2{fill:#004FFF;}
+</style>
+<g id="repere">
+</g>
+<g>
+	<rect x="45" y="36" class="st0" width="10" height="2"/>
+</g>
+<path class="st1" d="M49,15c19.3,0,35,15.7,35,35S68.3,85,49,85S14,69.3,14,50S29.7,15,49,15 M49,11c-21.5,0-39,17.5-39,39
+	s17.5,39,39,39s39-17.5,39-39S70.5,11,49,11L49,11z"/>
+<g>
+	<path class="st2" d="M39,34v7.1c0,5.2,4,9.5,9,10V63l-4,1v2h10v-2l-4-1V51.1c5.1-0.5,9-4.8,9-10V34H39z M57,39H41v-3h16V39z"/>
+</g>
+</svg>

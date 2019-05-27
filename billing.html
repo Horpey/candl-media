@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Candle</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.com/libraries/Chart.js" crossorigin="anonymous">
+</head>
+
+
+
+
+<body>
+    <!-- beginining of header -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class='pull-left'>
+                    <img src="img/logo.png" style="width:100px">
+                </div>
+
+                <!-- dropdown -->
+                <div class="row ">
+                    <div>
+                        <button class="btn-grad btn pl-4 btn-sm"><i class="fas fa-plus pr-2 pl-0"></i>Post ad</button>
+                    </div>
+
+                    <div class="pl-3">
+                        <div class="avatar mx-auto white">
+
+                            <p class="inline-block text-small">Seyike Sojirin <br>ssojirin@gmail.com</p>
+                            <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20%2810%29.jpg" class="rounded-circle border-image ml-2 mb-3"
+                                alt="woman avatar" style="width:36px">
+                            <span class=" dropdown waves-effect waves-light ">
+                                <span class="nav-link dropdown-toggle fas  cand-text" id="navbarDropdownMenuLink"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></span>
+                                <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                                        <a class="dropdown-item" href="#">Settings</a>
+                                        <a class="dropdown-item" href="#">Log Out</a>
+                                </div>
+                            </span>
+
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </nav>
+
+        <nav class="navbar navbar-expand-lg justify-content-start navbar-dark bg-grad lighten-4 py-0 my-0" style="
+        z-index: 0;
+    ">
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mr-auto mt-lg-0">
+                    <li class="nav-item mydash">
+                        <a class="nav-link  white-text py-3 grad" href="dashboard.html"><span><img src="img/icon2.svg"
+                                    class="mr-2" style="width:12px"></span>Dashboard</a>
+                    </li>
+                    <li class="nav-item mydash">
+                        <a class="nav-link white-text py-3 grad " href="managecampagin.html"><span><img src="img/icon4.svg"
+                                    class="mr-2" style="width:16px"></span>Manage Campaign</a>
+                    </li>
+                    <li class="nav-item mydash">
+                        <a class="nav-link white-text py-3 grad active" href="billing.html"><span><img src="img/icon3.svg"
+                                    class="mr-2" style="width:10px"></span>Billing</a>
+                    </li>
+                    <li class="nav-item mydash">
+                        <a class="nav-link white-text py-3 grad" href="account.html"><span><img src="img/icon.svg"
+                                    class="mr-2" style="width:14px"></span>Account</a>
+                    </li>
+                    <form class="form-inline mx-auto">
+                        <div class="md-form my-0">
+                            <input class="form-control mr-sm-2 place-white" type="text" placeholder="Type to search"
+                                aria-label="Search">
+                        </div>
+                    </form>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- end of headers -->
+
+    <div class="container pt-4">
+        <div class="row justify-content-between">
+            <div class="col-md-4 pt-3">
+                <h5 class ="font-bold wow fadeInLeft">Card records</h5>
+            </div>
+            <div class="col-md-3 wow fadeInRight">
+                <div>
+                    <button class="btn-new-card btn pl-4 btn-md " data-toggle="modal" data-target="#modalLoginForm"><i class="fas fa-plus pr-2 pl-0"></i>Add New Card</button>
+                </div>
+            </div>
+        </div>
+        <div class="row pt-5">
+                <div class="col-md-4 mt-3 wow bounceInLeft">
+                        <div class="card-box px-3 py-3" >
+                                <div class="row justify-content-between">
+                                    <div class = "col-md-3 col-sm-3 col-lg-3 col-3 col-xs-3">
+                                        <img src = "img/chip.png" style ="width:45px"> 
+                                    </div>
+                                    <div class = "col-md-3 col-sm-3 col-lg-3 col-3 col-xs-3">
+                                        <img src = "img/mastercard.png" style ="width:55px"> 
+                                    </div>
+                                </div>
+            
+                                <div class ="white-text pt-3 pb-2">
+                                    <h2>**** **** ****<span>4444</span></h2>
+                                </div>
+                                <div class="row justify-content-between white-text">
+                                    <div class = "col-md-6 col-sm-6 col-xm-6  col-6">
+                                       <p class = "pb-0 mb-0">Card Holder</p>
+                                       <p class = "font-bold">Seyike Sojirin</p>
+                                    </div>
+                                    <div class = "col-md-4 col-sm-4 col-6 col-xs-4">
+                                        <p class = "pb-0 mb-0">Expiry Date</p>
+                                        <p class = "font-bold pt-0 mt-0">09/19</p>
+                                    </div>
+                                </div>
+            
+                               
+                               
+                                
+                        </div>
+    
+                </div>
+                <div class="col-md-4 mt-3 wow bounceInUp">
+                        <div class="card-box2 px-3 py-3">
+                                <div class="row justify-content-between">
+                                    <div class = "col-md-3 col-sm-3 col-lg-3 col-3 col-xs-3">
+                                        <img src = "img/chip.png" style ="width:45px"> 
+                                    </div>
+                                    <div class = "col-md-3 col-sm-3 col-lg-3 col-3 col-xs-3">
+                                        <img src = "img/mastercard.png" style ="width:55px"> 
+                                    </div>
+                                </div>
+            
+                                <div class ="white-text pt-3 pb-2">
+                                    <h2>**** **** ****<span>4444</span></h2>
+                                </div>
+                                <div class="row justify-content-between white-text">
+                                    <div class = "col-md-6 col-sm-6 col-xm-6  col-6">
+                                       <p class = "pb-0 mb-0">Card Holder</p>
+                                       <p class = "font-bold">Seyike Sojirin</p>
+                                    </div>
+                                    <div class = "col-md-4 col-sm-4 col-6 col-xs-4">
+                                        <p class = "pb-0 mb-0">Expiry Date</p>
+                                        <p class = "font-bold pt-0 mt-0">09/19</p>
+                                    </div>
+                                </div>
+            
+                               
+                               
+                                
+                        </div>
+    
+                </div>
+            <div class="col-md-4 mt-3 wow bounceInRight">
+                    <div class="card-box3 px-3 py-3">
+                            <div class="row justify-content-between">
+                                <div class = "col-md-3 col-sm-3 col-lg-3 col-3 col-xs-3">
+                                    <img src = "img/chip.png" style ="width:45px"> 
+                                </div>
+                                <div class = "col-md-3 col-sm-3 col-lg-3 col-3 col-xs-3">
+                                    <img src = "img/mastercard.png" style ="width:55px"> 
+                                </div>
+                            </div>
+        
+                            <div class ="white-text pt-3 pb-2">
+                                <h2>**** **** ****<span>4444</span></h2>
+                            </div>
+                            <div class="row justify-content-between white-text">
+                                <div class = "col-md-6 col-sm-6 col-xm-6  col-6">
+                                   <p class = "pb-0 mb-0">Card Holder</p>
+                                   <p class = "font-bold">Seyike Sojirin</p>
+                                </div>
+                                <div class = "col-md-4 col-sm-4 col-6 col-xs-4">
+                                    <p class = "pb-0 mb-0">Expiry Date</p>
+                                    <p class = "font-bold pt-0 mt-0">09/19</p>
+                                </div>
+                            </div>
+        
+                           
+                           
+                            
+                    </div>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="container pt-5 table-responsive text-nowrap" style="
+    overflow-x: scroll;">
+        <h6 class ="cand-text">Transaction Records</h6>
+        <table id="dtBasicExample" class="table table-striped " cellspacing="0" width="100%">
+            <thead>
+                <tr>
+                    <th class="th-sm">References
+                    </th>
+                    <th class="th-sm">Campaign
+                    </th>
+                    <th class="th-sm">Amount
+                    </th>
+                    <th class="th-sm">Transaction Date
+                    </th>
+
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr class ="wow fadeInUp">
+                    <td>CNDL-SAV-R86571531828392</td>
+                    <td>coca-cola</td>
+                    <td>6,000,000</td>
+                    <td>2018-07-17 12:54:02</td>
+
+                    <td><button class="btn btn-sm btn-grad ">View</button></td>
+                </tr>
+                <tr class ="wow fadeInUp">
+                    <td>CNDL-SAV-R86571531828392</td>
+                    <td>coca-cola</td>
+                    <td>6,000,000</td>
+                    <td>2018-07-17 12:54:02</td>
+
+                    <td><button class="btn btn-sm btn-grad ">View</button></td>
+                </tr>
+                <tr class ="wow fadeInUp">
+                    <td>CNDL-SAV-R86571531828392</td>
+                    <td>coca-cola</td>
+                    <td>6,000,000</td>
+                    <td>2018-07-17 12:54:02</td>
+
+                    <td><button class="btn btn-sm btn-grad ">View</button></td>
+                </tr>
+                <tr class ="wow fadeInUp">
+                    <td>CNDL-SAV-R86571531828392</td>
+                    <td>coca-cola</td>
+                    <td>6,000,000</td>
+                    <td>2018-07-17 12:54:02</td>
+
+                    <td><button class="btn btn-sm btn-grad ">View</button></td>
+                </tr>
+                <tr class ="wow fadeInUp">
+                    <td>CNDL-SAV-R86571531828392</td>
+                    <td>coca-cola</td>
+                    <td>6,000,000</td>
+                    <td>2018-07-17 12:54:02</td>
+
+                    <td><button class="btn btn-sm btn-grad ">View</button></td>
+                </tr>
+                <tr class ="wow fadeInUp">
+                        <td>CNDL-SAV-R86571531828392</td>
+                        <td>coca-cola</td>
+                        <td>6,000,000</td>
+                        <td>2018-07-17 12:54:02</td>
+    
+                        <td><button class="btn btn-sm btn-grad ">View</button></td>
+                </tr>
+                <tr class ="wow fadeInUp">
+                        <td>CNDL-SAV-R86571531828392</td>
+                        <td>coca-cola</td>
+                        <td>6,000,000</td>
+                        <td>2018-07-17 12:54:02</td>
+    
+                        <td><button class="btn btn-sm btn-grad ">View</button></td>
+                </tr>
+                <tr class ="wow fadeInUp">
+                        <td>CNDL-SAV-R86571531828392</td>
+                        <td>coca-cola</td>
+                        <td>6,000,000</td>
+                        <td>2018-07-17 12:54:02</td>
+    
+                        <td><button class="btn btn-sm btn-grad ">View</button></td>
+                </tr>
+                <tr class ="wow fadeInUp">
+                        <td>CNDL-SAV-R86571531828392</td>
+                        <td>coca-cola</td>
+                        <td>6,000,000</td>
+                        <td>2018-07-17 12:54:02</td>
+    
+                        <td><button class="btn btn-sm btn-grad ">View</button></td>
+                </tr>
+
+
+
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th class="th-sm">References
+                    </th>
+                    <th class="th-sm">Campaign
+                    </th>
+                    <th class="th-sm">Amount
+                    </th>
+                    <th class="th-sm">Transaction Date
+                    </th>
+
+
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+
+<!-- add new card -->
+<div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header " style="border:0">
+                    <h4 class="modal-title w-100 font-weight-bold pl-2">Add New Card</h4>
+                    <button type="button" class="close cand-text " data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body mx-3 mt-3 mb-3">
+                    <div class="mb-3">
+                        <label>Card Number</label>
+                        <input type="number" id="defaultForm-email" class="form-control validate" placeholder="">
+
+                    </div>
+
+                    <div class=" mb-4">
+                            <h5>Expiry Date</h5>
+                        <div class ="row">
+                            <div class ="col-md-4">
+                                    <label>Month</label>
+                                    <input type="date" id="defaultForm-pass" class="form-control validate" placeholder="" maxlength="5">
+                            </div>
+                            <div class ="col-md-4">
+                                    <label>Year</label>
+                                    <input type="date" id="defaultForm-pass" class="form-control validate" placeholder="">
+                            </div>
+                            <div class ="col-md-4">
+                                                      
+                        <label>CVV</label>
+                        <input type="number" id="defaultForm-pass" class="form-control validate" placeholder="" maxlength="3">
+                            </div>
+                        </div>
+                      
+                          
+ 
+                        
+                      
+                    </div>
+                    <div class="mb-3 text-center">
+                            <!-- <label>Card Pin</label>
+                            <input type="password" id="defaultForm-email" class="form-control validate" placeholder=""> -->
+                            <div class="">
+                                    <div class="container">
+                                      <p class ="text-left">PIN  🔒</p>
+                                      <p>Please enter your PIN</p>
+                                      <div class=" justify-content-between">
+                                            <input class = "form-control col-md-7 text-center mx-auto" type="text" disabled> 
+                                      </div>
+                                     
+                                      <pre id="results"></pre>
+                                        <div id="pinpad" class="btn-group btn-matrix mb-3">
+                                        <button class="btn btn-dark" data-value="1">1</button>
+                                        <button class="btn btn-dark" data-value="2">2</button>
+                                        <button class="btn btn-dark" data-value="3">3</button>
+                                        <button class="btn btn-dark" data-value="4">4</button>
+                                        <button class="btn btn-dark" data-value="5">5</button>
+                                        <button class="btn btn-dark" data-value="6">6</button>
+                                        <button class="btn btn-dark" data-value="7">7</button>
+                                        <button class="btn btn-dark" data-value="8">8</button>
+                                        <button class="btn btn-dark" data-value="9">9</button>
+                                        <button class="btn btn-dark mx-auto" data-value="0">0</button>
+                                      </div>
+                                    
+                                    </div>
+                                  </div>
+    
+                    </div>
+                </div>
+                <div class="modal-footer d-flex justify-content-center mb-3 " style="border:0">
+                    <div class ="text-center mx-3">
+     
+                        <a href ="dashboard.html" class="btn btn-grad ">Add Card</a>
+                    </div>
+
+                   
+                </div>
+               
+               
+            </div>
+        </div>
+    </div>
+
+<!-- end of add new card -->
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <div class="hiddendiv common"></div>
+   
+    <script>
+            const PIN_LENGTH = 4
+     
+     // Creates a signal for the given button element.
+     function buttonSignal (button) {
+       return bulb.Signal.fromEvent('click', button).map(() => button.dataset.value)
+     }
+     
+     // Appends the value `a` to the list of `as`.
+     function appendNumber (as, a) {
+       return as.length < PIN_LENGTH ? as + a : a
+     }
+     
+     // Returns true if the string `s` is of length `n`.
+     const lengthEqualTo = n => s => s.length === n
+     
+     // Get the button elements in the pinpad.
+     const buttons = Array.from(document.getElementById('pinpad').querySelectorAll('button'))
+     
+     // Map the buttons to button signals.
+     const buttonSignals = buttons.map(buttonSignal)
+     
+     // Merge all the button signals together.
+     const valueSignal = bulb.merge(buttonSignals)
+     
+     // Create a signal that emits completed PINs.
+     const pinSignal = valueSignal.scan(appendNumber, '').filter(lengthEqualTo(PIN_LENGTH))
+     
+     // Get the results element.
+     const results = document.getElementById('results')
+     
+     pinSignal.subscribe(value => {
+       results.textContent = JSON.stringify(Array.from(value))
+     })
+         </script>
+</body>
+
+</html>

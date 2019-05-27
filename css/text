@@ -1,0 +1,181 @@
+ <div class="container">
+            <div class="row pt-5">
+                <div class="col-lg-6 col-12 col-sm-6 col-md-6  wow fadeIn mb-5 text-lg-left ">
+                    <div class="mt-5 ">
+                        <h1 class="black-text h1-responsive font-bold wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-name: fadeInLeft; animation-delay: 0.3s;">
+                            Scale </h1>
+                        <h2 class="h2-responsive pt-2 wow fadeInLeft" data-wow-delay="0.4s">Go for the game</h2>
+                        <p class=" pt-3 head-text-sub wow fadeInLeft" data-wow-delay="0.6s">Welcome to Nigeria’s
+                            Largest
+                            Digital<br>Out-Of-Home Exchange</p>
+
+                        <a class="mt-5 btn btn-grad wow fadeInLeft waves-effect waves-light" data-wow-delay="0.8s">Create
+                            Account</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-12  bounce " id="vector">
+                    <div>
+                        <img src="img/vector.png" style="width: 43vw">
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+    <section class="pt-5 mt-5">
+        <div class="container">
+            <div class="pb-5">
+                <p class="longdash  mb-1 d-inline-flex mr-3"></p>
+                <h5 class="cand-text d-inline-flex h5-responsive">What we do in a nut shell</h5>
+            </div>
+            <div class="text-center">
+                <div class="py-0 px-0 justify-content-center ">
+
+                    <div class="justify-content-center">
+                        <iframe src="https://player.vimeo.com/video/60814695?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff"
+                            class="border" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                    </div>
+
+                    <div class="container px-5 pt-5">
+                        <div class="row px-5">
+                            <div class="col-lg-4 col-md-4 col-sm-4">
+                                <h1 class="num-text">50+</h1>
+                                <p>Spaces Nationwide</p>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4">
+                                <h1 class="num-text">2000+</h1>
+                                <p>Running ads and Campaigns</p>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4">
+                                <h1 class="num-text">300+</h1>
+                                <p>Brands and Product user</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <section>
+        <div class="container">
+            <div class="pb-5">
+                <p class="longdash  mb-1 d-inline-flex mr-3"></p>
+                <h5 class="cand-text d-inline-flex h5-responsive">Features</h5>
+            </div>
+            <h3>Everything candle has to offer</h3>
+            <p>Familiarize yourself with every aspect of the buying platform</p>
+            <div class="pt-3">
+                <div class="row ">
+                    <div class="col-md-6 pt-3">
+                        <img src="img/2.png" style="width:388px" class="wow bounce infinte">
+                    </div>
+                    <div class="col-md-6 justify-content-center pt-5 mt-5">
+                        <h3 class="text pb-3">Audiences</h3>
+                        <p>We’re making it easy for you to find your targets. We offer over 150 Audience personnas
+                            powered by mobile data. </p>
+                        <p class="a-link"><a>Discover the Possibilities here !</a></p>
+                    </div>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-md-6 justify-content-center pt-5 mt-5">
+                        <h3 class="text pb-3">Campaigns</h3>
+                        <p>We’re making it easy for you to find your targets. We offer over 150 Audience
+                            personnas powered by mobile data. </p>
+                        <p class="a-link"><a>Start Exploring Now!</a></p>
+                    </div>
+                    <div class="col-md-6 pt-3">
+                        <img src="img/3.png" style="width:388px">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 pt-3">
+                        <img src="img/4.png" style="width:388px">
+                    </div>
+                    <div class="col-md-6 justify-content-center pt-5 mt-5">
+                        <h3 class="text pb-3">Inventory</h3>
+                        <p>We’re making it easy for you to find your targets. We offer over 150
+                            Audience personnas powered by mobile data. </p>
+                        <p class="a-link"><a>Find the best way to match your strategy</a></p>
+                    </div>
+                </div>
+                <div>
+                    <div class="row">
+
+                        <div class="col-md-6 justify-content-end pt-5 mt-5">
+                            <h3 class="text pb-3">Mobile Data</h3>
+                            <p>We’re making it easy for you to find your targets. We offer over 150
+                                Audience personnas powered by mobile data. </p>
+                            <p class="a-link"><a>Discover the Possibilities here !</a></p>
+                        </div>
+                        <div class="col-md-6 justify-content-end  pt-3">
+                            <img src="img/1.png" style="width:388px">
+                        </div>
+                    </div>
+                </div>
+               
+
+            </div>
+        </div>
+
+
+    </section>
+
+    <section class="pt">
+        <div class="">
+            <div class="bg-create">
+                <div class="container pt-candle">
+                    <h5>DISCOVER A NEW PLAYGROUND
+                    </h5>
+                    <h2>
+                        Start using Candle now !</h2>
+                    <div class="pt-5">
+                        <a class="btn btn-lg px-4  waves-effect cand-btn waves-light " href="#">Create account</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+
+        <div class="pt row justify-content-md-center">
+            <div class='text-center col-lg-4 '>
+                <h3>Subscribe Newsletter</h3>
+                <p>Get update on our new offers and promotions </p>
+                <form class="text-center ">
+                    <div class="">
+                        <input type="email" placeholder="Please enter email address" class="form-control   ">
+                    </div>
+
+                </form>
+
+                <div class='pt-5'>
+                    <button class="btn btn-md btn-grad">Subscribe</button>
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
+
+   
