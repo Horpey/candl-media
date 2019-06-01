@@ -29,7 +29,7 @@
 
 body {
     font-size: 0.9rem;
-    overflow: visible;
+    overflow-x: hidden;
     font-family: 'Muli', sans-serif;
 }
 .font-light{
@@ -93,7 +93,7 @@ please do not make changes directly to them */
 
 }
 .outline-semi{
-    border:2px dotted #FF0A62;
+    border: 0.6px solid #ff0a6421;
     background-color: white;
     border-radius: 105px;
     padding: 20px 40px 20px 40px;
@@ -428,7 +428,9 @@ width: -webkit-fill-available!important;
    
  position: relative;
  background-position: inherit;
-    background: linear-gradient(180deg , #F82323 , #FF0A62 );
+ background: linear-gradient(180deg , #F82323 , #7d001a);
+
+
     /* background-image: url('../img/9.png'); */
     margin-top: 100px;
     padding-top: 4em;
@@ -952,7 +954,13 @@ background-color: #F2F2F2;
 	position: relative;
 	padding-bottom: 56.25%; /* 16:9 */
 	padding-top: 25px;
-	height: 0;
+    height: 0;
+    right: -16px;
+    overflow: hidden;
+}
+.what-candd{
+    margin-left: 140px;
+    margin-top: 100px;
 }
 .videoWrapper iframe {
 	position: absolute;
@@ -1153,7 +1161,12 @@ background-color: #F2F2F2;
     background: linear-gradient(#cb000012,white);
     padding-bottom: 113px;
 }
+.card-bundle:hover{
+    transform: translatey(-20px);
+    cursor: pointer
+}
 .card-bundle{
+    transition: 0.6s all;
     box-shadow: 0 26px 30px -14px rgba(0,102,245,0.08);
     border-radius: 12px;
     padding: 40px 0px;
@@ -1161,6 +1174,18 @@ background-color: #F2F2F2;
     background-repeat: no-repeat;
     background-position: right;
     background-color: white;
+    min-height: 240px;
+}
+.card-what{
+    transition: 0.6s all;
+    box-shadow: 0 26px 30px -14px rgba(0,102,245,0.08);
+    border-radius: 12px;
+    padding: 40px 0px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: white;
+    min-height: 240px;
 }
 .card-bundle-1{
     background-image: url('../img/candle-element/cand/card-style-1.png');
