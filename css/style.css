@@ -67,16 +67,20 @@ please do not make changes directly to them */
   background-size: cover;
 }
 .bg-home{
-    background-image: url('../img/candle-element/cand/homebg-3.png'); 
+    /* background-image: url('../img/candle-element/cand/homebg-3.png');  */
+    background-image: url('../img/candle-element/pineapple-bg.jpg'); 
 }
 .bg-invent{
-    background-image: url('../img/candle-element/cand/inventorybg.png'); 
+    background-image: url('../img/candle-element/pineapple-bg.jpg'); 
+    /* background: linear-gradient(45deg, white,#EFA6B6) */
 }
 .bg-board{
-    background-image: url('../img/candle-element/cand/boardbg.png'); 
+    /* background-image: url('../img/candle-element/cand/boardbg.png');  */
+    background-image: url('../img/candle-element/pineapple-bg.jpg'); 
 }
 .bg-campaign{
-    background-image: url('../img/candle-element/cand/campaignbg.png'); 
+    background: linear-gradient(45deg, white,#EFA6B6)
+    /* background-image: url('../img/candle-element/cand/campaignbg.png');  */
 }
 .modal-header{
     background-color: #fff2f5;
@@ -1219,4 +1223,40 @@ background-color: #F2F2F2;
 }
 .card-bundle-new{
     border: 11px solid #f2f7fc;
+}
+.what-straw{
+    position: relative;
+}
+.straw-1{
+    width: 57px;
+    bottom: 62px;
+    left: -33px;
+    position: absolute;
+}
+.straw-2{
+    width: 42px;
+    bottom: 0;
+    left: 58px;
+    position: absolute;
+}
+.straw-3{
+    width: 48px;
+    bottom: 62px;
+    left: 138px;
+    position: absolute;
+}
+.straw-4{
+    width: 65px;
+    top: 19px;
+    right: 83px;
+    position: absolute;  
+}
+.straw-5{
+    width: 43px;
+    top: 67px;
+    left: 56px;
+    position: absolute;
+}
+.mult-blend{
+    mix-blend-mode: multiply;
 }
