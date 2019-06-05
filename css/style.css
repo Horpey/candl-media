@@ -71,10 +71,10 @@ please do not make changes directly to them */
 }
 .bg-home{
     /* background-image: url('../img/candle-element/cand/homebg-3.png');  */
-    background-image: url('../img/candle-element/pineapple-bg.jpg'); 
+    background-image: url('../img/candle-element/cand/bg-berry.png'); 
 }
 .bg-invent{
-    background-image: url('../img/candle-element/pineapple-bg.jpg'); 
+    background-image: url('../img/candle-element/cand/inventbg-two.png'); 
     /* background: linear-gradient(45deg, white,#EFA6B6) */
 }
 .bg-board{
@@ -1032,6 +1032,9 @@ background-color: #F2F2F2;
 .campaign-info-ex .inform{
     padding: 18px;
 }
+.campaign-info-ex .inform p{
+    margin-bottom: 0px;
+}
 .campaign-info-ex .grey-sp{
     background: #f6f6f6;
     padding: 18px;
@@ -1042,6 +1045,9 @@ background-color: #F2F2F2;
     color: white;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
+}
+.campaign-info-ex .locatee h5{
+    margin-bottom: 0px;
 }
 .campaign-creative{
     border: 12px solid black;
