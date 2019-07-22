@@ -1304,3 +1304,28 @@ background-color: #F2F2F2;
     position: absolute;
     bottom: 16px;
 }
+.bg-about{
+    background: #ffdddd;
+}
+.introbg{
+    background-image: url(../img/5cd7099736b4f.png);
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover
+}
+.introbg2{
+    background-image: url(../img/audience-billboard.jpg);
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover
+}
+.sectioncol{
+    background: #fff0f0;
+}
+.partners{
+    margin-top: 30px;
+    text-align: center
+}
+.partners img{
+    margin: 10px 15px;
+}
