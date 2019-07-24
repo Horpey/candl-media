@@ -433,7 +433,7 @@ width: -webkit-fill-available!important;
 .bg-footer{
  position: relative;
  background-position: inherit;
- background: #980104;
+ /* background: #980104; */
     /* background-image: url('../img/9.png'); */
     margin-top: 100px;
     padding-top: 4em;
@@ -466,7 +466,8 @@ width: -webkit-fill-available!important;
     padding: 8px;
     font-size: 1.3em;
     border-radius: 3px;
-    color: #980104;
+    color: #ffffff;
+    background: #bbbbbb;
 }
 
 @media only screen and (max-width: 528px){
@@ -1160,7 +1161,8 @@ background-color: #F2F2F2;
     margin: 12px 0px;
 }
 .footer-list li a{
-    color: white;
+    color: #62626f;
+    font-size: 12px;
 }
 .p-absolute{
     position: absolute;
