@@ -453,7 +453,7 @@ width: -webkit-fill-available!important;
    }
 @media only screen and (max-width: 604px){
     .bg-footer{
-        background: linear-gradient(180deg , #F82323 , #FF0A62 )!important;
+        /* background: linear-gradient(180deg , #F82323 , #FF0A62 )!important; */
         margin-top: 43px!important;
         padding-top: 3em;
         
@@ -1330,4 +1330,46 @@ background-color: #F2F2F2;
 }
 .partners img{
     margin: 10px 15px;
+}
+.pointlocate{
+    position: relative;
+}
+.lagos-point{
+    background: red;
+    height: 10px;
+    width: 10px;
+    border-radius: 31px;
+    position: absolute;
+    top: 328px;
+    right: 557.48px;
+    animation: shadow-pulse 1.5s infinite;
+}
+.kenya-point{
+    background: red;
+    height: 10px;
+    width: 10px;
+    border-radius: 31px;
+    position: absolute;
+    top: 354px;
+    right: 448.48px;
+    animation: shadow-pulse 1.5s infinite;
+}
+.ghana-point{
+    background: red;
+    height: 10px;
+    width: 10px;
+    border-radius: 31px;
+    position: absolute;
+    top: 335px;
+    right: 583.48px;
+    animation: shadow-pulse 1.5s infinite;
+}
+@keyframes shadow-pulse {
+    0% {
+        box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+    }
+
+    100% {
+        box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+    }
 }
